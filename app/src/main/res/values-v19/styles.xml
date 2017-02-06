@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!--<style name="AppTheme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">-->
+    <!--<style name="AppTheme" parent="android:Theme.Light.NoTitleBar">-->
+        <!-- 建议在BaseActivity中代码声明 -->
+         <item name="android:windowTranslucentStatus">true</item>
+
+        <!-- window color -->
+        <!--<item name="android:windowBackground">@android:color/holo_blue_light</item>-->
+
+        <!--&lt;!&ndash;<item name="android:colorBackgroundCacheHint">@android:color/transparent</item>&ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation</item>-->
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+    <!--<style name="AppTheme1" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">-->
+        <!--<style name="AppTheme" parent="android:Theme.Light.NoTitleBar">-->
+        <!-- 建议在BaseActivity中代码声明 -->
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <!-- window color -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!--<item name="android:colorBackgroundCacheHint">@android:color/transparent</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation</item>-->
+    </style>
+
+</resources>

@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout_top" />
+
+    <include layout="@layout/toolbar_layout" />
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <LinearLayout
+        android:id="@+id/control_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_player_bottom_seekbar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="当前时间" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:maxHeight="5dip"
+                android:minHeight="5dip"
+                android:progress="20"
+                android:progressDrawable="@drawable/progress_horizontal"
+                android:thumb="@drawable/progress_thumb" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="总时间" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_player_bottom_control"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/play_bg" />
+
+            <Button
+                android:id="@+id/btn_switch_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/switch_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+        <ui.PinnedHeaderExpandableListView
+            android:id="@+id/expandablelist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:cacheColorHint="@null"
+            android:childDivider="@drawable/child_bg"
+            android:childIndicator="@color/black"
+            android:divider="@color/colorRed"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:childIndicatorLeft="110dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="false">
+
+        </ui.PinnedHeaderExpandableListView>
+
+
+</LinearLayout>

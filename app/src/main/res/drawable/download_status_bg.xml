@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/download_waiting_icon" android:maxLevel="0" />
+    <item android:drawable="@mipmap/download_pausing_icon" android:maxLevel="1" />
+    <item android:drawable="@mipmap/download_ing_icon" android:maxLevel="2" />
+    <item android:drawable="@mipmap/download_complete_icon" android:maxLevel="3" />
+</level-list>

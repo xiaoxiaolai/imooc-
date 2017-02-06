@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="#ffffffff">
+
+    <TextView
+        android:id="@+id/group_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:lines="1"
+        android:maxEms="11"
+        android:ellipsize="end"
+        android:text="精品推荐" />
+
+
+
+</RelativeLayout>

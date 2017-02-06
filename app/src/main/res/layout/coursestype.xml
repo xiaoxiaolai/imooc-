@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scroll.SwipeBackControllerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coursedetails1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_FFFFFFFF">
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/blur_default_big" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ad_dots_selector" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ad_dots_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ui.PinnedHeaderExpandableListView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+</scroll.SwipeBackControllerLayout>

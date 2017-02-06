@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kevin="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout_top" />
+    <include layout="@layout/toolbar_layout" />
+    <ui.StickyLayout
+        android:id="@+id/sticky_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/sticky_header"
+>
+    <com.example.xiao.cui.bananaView.AdLoopView
+        android:id="@+id/adloop_act_adloopview"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        kevin:loop_interval="5000"
+        kevin:loop_dotMargin="5dp"
+        kevin:loop_autoLoop="true"
+        kevin:loop_dotSelector="@drawable/ad_dots_selector"
+        kevin:loop_defaultImg="@mipmap/ic_launcher"
+        kevin:loop_layout="@layout/ad_loopview_layout"
+>
+    </com.example.xiao.cui.bananaView.AdLoopView>
+    <include layout="@layout/show3image" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="定制课程"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:id="@+id/t"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_suggestions_add"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:id="@+id/appCompatImageView" />
+    </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/sticky_content"
+            >
+            <ui.LoadListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ListViewss">
+
+            </ui.LoadListView>
+        </LinearLayout>
+        </LinearLayout>
+    </ui.StickyLayout>
+
+</LinearLayout>

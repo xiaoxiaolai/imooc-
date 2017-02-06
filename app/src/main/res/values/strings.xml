@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">微信la</string>
+    <string name="action_search">查找</string>
+    <string name="action_add">添加</string>
+    <string name="menu_group_chat">发起群聊</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_addfriend">添加朋友</string>
+    <string name="menu_scan">扫一扫</string>
+    <string name="tab_contact">通讯录</string>
+    <string name="tab_found">发现</string>
+    <string name="tab_me">我</string>
+    <string name="loadvideotext">加载中，请稍候...</string>
+    <string name="pause_vector_path" translatable="false">M5,6 l14,0 l0,4 l-14,0z M5,14 l14,0 l0,4 l-14,0z</string>
+</resources>

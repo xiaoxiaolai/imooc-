@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <include layout="@layout/toolbar_layout_top" />
+
+    <include layout="@layout/toolbar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ui.PinnedHeaderExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/download_list_main"
+            android:layout_marginBottom="50dp"
+            android:cacheColorHint="@null"
+            android:childDivider="@drawable/child_bg"
+
+            android:divider="@color/colorRed"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:childIndicator="@color/black"
+            android:scrollbarAlwaysDrawHorizontalTrack="false" />
+        <!--android:childIndicatorLeft="110dp"-->
+
+
+
+        <LinearLayout
+            android:id="@+id/button111"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+            <!--android:layout_alignParentBottom="true"-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="确认下载"
+                android:padding="0dp"
+                android:background="@color/white"
+                android:textColor="@color/blue_33BBFF"
+                android:id="@+id/check_download"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+                android:background="#11000000"  />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="全选"
+                android:background="@color/white"
+                android:padding="0dp"
+                android:id="@+id/check_all_box"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_404040"
+            android:layout_above="@id/button111"/>
+
+        <ProgressBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="50dp"
+            android:id="@+id/View_empty" />
+
+        <!--<TextView-->
+
+            <!--android:padding="50dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="网络加载"-->
+            <!--android:layout_gravity="center" />-->
+    </RelativeLayout>
+
+
+
+</LinearLayout>

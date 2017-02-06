@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<scroll.SwipeBackControllerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:id="@+id/xxx"
+    android:background="#ff000000"
+>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_FFFFFFFF">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar_layout_top3" />
+        <include layout="@layout/toolbar_layout3" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#660000">
+        <!--<WebView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/black"-->
+            <!--android:src="@color/white_FFFFFFFF">-->
+        <io.vov.vitamio.widget.VideoView
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:alpha="1"
+            />
+        <!--</WebView>-->
+
+        <LinearLayout
+            android:alpha="0.5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_player_4"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/control_playertop"
+            >
+
+            <TextView
+                android:id="@+id/video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="video name test"
+                android:textColor="@color/play_time_color"
+                android:textSize="13.0sp" />
+
+            <ImageView
+                android:id="@+id/battery_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/ic_battery_0" />
+
+            <TextView
+                android:id="@+id/last_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20.0dip"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="Time 00:23:63"
+                android:textColor="@color/play_time_color"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/control_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/control_player_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:background="@drawable/bg_player_bottom_seekbar"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/current_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="当前时间"
+                    android:textColor="@color/white" />
+
+                <Button
+
+                    android:id="@+id/btn_play_pause"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/play_bg" />
+
+                <SeekBar
+                    android:id="@+id/PlaybackProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:padding="0dp"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+                <!--android:thumb="@drawable/progress_thumb"-->
+
+                <TextView
+                    android:id="@+id/total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:text="总时间"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    android:id="@+id/bottom">
+    <ui.ViewPagerIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/black_99000000">
+    </ui.ViewPagerIndicator>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/indicator"
+        android:background="@color/red_7FF01400" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/videoviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:background="@color/black_404040">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
+
+</LinearLayout>
+</scroll.SwipeBackControllerLayout>

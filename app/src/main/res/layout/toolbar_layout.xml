@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorRed"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/download_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载"
+        android:background="@color/colorRed"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
+
+
+
+</android.support.v7.widget.Toolbar>
+    <!--android:paddingTop="@dimen/toolbar_padding_top"-->

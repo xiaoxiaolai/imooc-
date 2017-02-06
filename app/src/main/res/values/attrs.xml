@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LoopView">
+        <!-- 跳动时间间隔 -->
+        <attr name="loop_interval" format="integer" />
+        <!-- 是否自动跳转 -->
+        <attr name="loop_autoLoop" format="boolean" />
+        <!-- 指示点间距离 -->
+        <attr name="loop_dotMargin" format="dimension" />
+        <!-- 指示点选择器 -->
+        <attr name="loop_dotSelector" format="reference" />
+        <!-- 默认轮转图片 -->
+        <attr name="loop_defaultImg" format="reference" />
+        <!-- 自定义布局 -->
+        <attr name="loop_layout" format="reference" />
+    </declare-styleable>
+
+    <attr name="icon" format="reference"></attr>
+    <attr name="color" format="color"></attr>
+    <attr name="text" format="string"></attr>
+    <attr name="text_size" format="dimension"></attr>
+
+    <declare-styleable name="ChangeColorIconWithText">
+        <attr name="icon"></attr>
+        <attr name="color"></attr>
+        <attr name="text"></attr>
+        <attr name="text_size"></attr>
+    </declare-styleable>
+
+    <attr name="visible_tab_count" format="integer" />
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="visible_tab_count" />
+    </declare-styleable>
+
+</resources>

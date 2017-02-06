@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ui.MyViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ui.MyViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal"
+       >
+
+        <ui.ChangeColorIconWithText
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:icon="@mipmap/ic_menu_start_conversation"
+            hyman:text="@string/app_name"
+            hyman:text_size="12sp"
+            hyman:color="#ff45c01a" />
+
+        <ui.ChangeColorIconWithText
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:icon="@mipmap/ic_menu_friendslist"
+            hyman:text="@string/tab_contact"
+            hyman:text_size="12sp"
+            hyman:color="#ff45c01a" />
+
+        <ui.ChangeColorIconWithText
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:icon="@mipmap/ic_menu_emoticons"
+            hyman:text="@string/tab_found"
+            hyman:text_size="12sp"
+            hyman:color="#ff45c01a" />
+
+        <ui.ChangeColorIconWithText
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:icon="@mipmap/ic_menu_allfriends"
+            hyman:text="@string/tab_me"
+            hyman:text_size="12sp"
+            hyman:color="#ff45c01a" />
+    </LinearLayout>
+
+</LinearLayout>

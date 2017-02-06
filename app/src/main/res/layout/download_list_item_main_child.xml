@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/group_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:lines="2"
+        android:maxEms="10"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:text="精品推荐" />
+
+
+    <ImageView
+        android:src="@mipmap/download_complete_icon"
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+    />
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/donut_progress"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        custom:donut_finished_stroke_width="1.5dp"
+        custom:donut_unfinished_stroke_width="0dp"
+        custom:donut_text_size="5sp"
+        custom:donut_max="100"
+        android:background="@drawable/download_status_bg"/>
+
+
+    <!--<ProgressBar-->
+   <!---->
+        <!--style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:id="@+id/donut_progress"-->
+        <!--android:layout_width="135dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:max="100"-->
+        <!--android:progressDrawable="@drawable/myprogressbar"/>-->
+    <!--<ProgressBar-->
+        <!--android:id="@+id/donut_progress"-->
+        <!--style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/myprogressbar"-->
+        <!--android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"-->
+        <!--android:indeterminateOnly="false"-->
+        <!--android:max="100"-->
+        <!--android:minHeight="16dp"-->
+        <!--android:progressDrawable="@drawable/myprogressbar"-->
+        <!--android:layout_below="@+id/group_child"/>-->
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/checkBox"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"
+        android:text="精品推荐" />
+
+</RelativeLayout>

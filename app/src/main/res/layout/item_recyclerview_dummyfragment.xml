@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_item_icon"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/actionbar_icon"
+                android:scaleType="fitXY"/>
+
+            <Button
+                android:id="@+id/button_item_subscribe"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:text="+关注"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android第1周"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView_item_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="讲师：Running"
+                android:textColor="#00f"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/textView_item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textView_item_star"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="难度系数："/>
+
+            <RatingBar
+                android:id="@+id/ratingBar_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

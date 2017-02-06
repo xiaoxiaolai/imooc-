@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scroll.SwipeBackControllerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/position"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/blur_default_big"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:alpha="0.0"
+            android:background="@mipmap/blur_default_big"
+
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:overScrollMode="never" />
+    </RelativeLayout>
+</scroll.SwipeBackControllerLayout>
